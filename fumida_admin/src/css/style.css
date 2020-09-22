@@ -24,5 +24,6 @@ section {
 }
 
 .bg-footer {
-    background: #1f232b
+    background: #1f232b !important;
+    background-color: #1f232b !important;
 }
