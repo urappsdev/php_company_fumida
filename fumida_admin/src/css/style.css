@@ -27,3 +27,15 @@ section {
     background: #1f232b !important;
     background-color: #1f232b !important;
 }
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-caption .row {
+    margin-top: -400px;
+}
+
+.carousel-caption .row p {
+    font-size: 20px;
+}
