@@ -9,8 +9,7 @@ section {
 }
 
 .parallax-1 {
-    background: url(../img/background-rayap.jpg);
-    position: relative;
+    background: url('../img/carousel/Slider3New-2.jpg') position: relative;
     background-attachment: fixed;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
