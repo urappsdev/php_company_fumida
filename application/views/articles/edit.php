@@ -3,12 +3,13 @@
 		<div class="card">
 			<div class="card-body">
 				<?php foreach ($articles as $article) : ?>
-					<form action="" method="post">
+					<form action="<?= base_url('articles/updates') ?>" method="post">
 						<div class="row">
 							<div class="col-md-8">
 								<div class="form-group">
-									<label for="judul">Judul</label>
-									<input type="text" name="judul" class="form-control" value="<?= $article->title ?>">
+									<label for="title">Judul</label>
+									<input type="text" name="title" class="form-control" value="<?= $article->title ?>">
+									<input type="hidden" name="id" value="<?= $article->id ?>">
 								</div>
 								<div class="form-group">
 									<label for="released">Release the article ?</label>

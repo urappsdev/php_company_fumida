@@ -10,7 +10,7 @@
 						<th>Terbit</th>
 						<th>Author</th>
 						<th>Thumbnail</th>
-						<th>Action</th>
+						<th colspan="2">Action</th>
 					</thead>
 					<tbody>
 						<?php $no = 1; ?>
@@ -22,10 +22,10 @@
 								<td><?php echo $article->author; ?></td>
 								<td><?php echo $article->thumbnail; ?></td>
 								<td>
-									<div class="d-inline">
-										<a href="<?= base_url('articles/update/' . $article->id) ?>" class="btn btn-warning">Update</a>
-										<a href="<?= base_url('articles/delete/' . $article->id) ?>" class="btn btn-danger">Delete</a>
-									</div>
+									<a href="<?= base_url('articles/update/' . $article->slug) ?>" class="btn btn-warning">Update</a>
+								</td>
+								<td>
+									<form action="<?= base_url('articles/delete/' . $article->id) ?>" onclick="return confirm('Hapus data')" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
 								</td>
 							</tr>
 						<?php endforeach; ?>
