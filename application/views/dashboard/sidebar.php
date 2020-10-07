@@ -33,6 +33,12 @@
 					<p>Comment</p>
 				</a>
 			</li>
+			<li>
+				<a href="<?= base_url('auth/logout') ?>">
+					<i class="nc-icon nc-pin-3"></i>
+					<p>Logout</p>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
