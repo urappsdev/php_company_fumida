@@ -5,6 +5,7 @@
 				<i class="fas fa-user-plus"> Register</i>
 			</h4>
 			<div class="card-body">
+				<?= $this->session->flashdata('messages'); ?>
 				<form action="<?= base_url('auth/do_register') ?>" method="post">
 					<div class="form-group">
 						<label for="email">Email</label>

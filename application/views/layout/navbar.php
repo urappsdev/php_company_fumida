@@ -10,7 +10,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#"><strong>BERANDA</strong></a>
+					<a class="nav-link" href="<?= base_url() ?>"><strong>BERANDA</strong></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><strong>TENTANG KAMI</strong></a>
@@ -41,4 +41,3 @@
 		</div>
 	</div>
 </nav>
-

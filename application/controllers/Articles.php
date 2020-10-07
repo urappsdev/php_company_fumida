@@ -4,6 +4,7 @@ class Articles extends CI_Controller
 
 	public function index()
 	{
+		check_not_login();
 		$this->load->model('articles_m');
 		$data['articles'] = $this->articles_m->show()->result();
 		$this->load->view('dashboard/header');
@@ -15,6 +16,7 @@ class Articles extends CI_Controller
 
 	public function addArticle()
 	{
+		check_not_login();
 		$this->load->view('dashboard/header');
 		$this->load->view('dashboard/sidebar');
 		$this->load->view('dashboard/navbar');
@@ -24,6 +26,7 @@ class Articles extends CI_Controller
 
 	public function submit()
 	{
+		check_not_login();
 		$data = [
 			'title' 		=> $this->input->post('title'),
 			'slug' 			=> str_replace(' ', '-', $this->input->post('title')),
@@ -41,6 +44,7 @@ class Articles extends CI_Controller
 
 	public function update($slug)
 	{
+		check_not_login();
 		$this->load->model('articles_m');
 		$data['articles'] = $this->articles_m->find($slug)->result();
 		$this->load->view('dashboard/header');
@@ -52,6 +56,7 @@ class Articles extends CI_Controller
 
 	public function updates()
 	{
+		check_not_login();
 		$this->load->model('articles_m');
 		$this->articles_m->update($this->input->post());
 		return redirect('articles');
@@ -59,6 +64,7 @@ class Articles extends CI_Controller
 
 	public function delete($id)
 	{
+		check_not_login();
 		$this->load->model('articles_m');
 		$this->articles_m->delete($id);
 		return redirect('articles');

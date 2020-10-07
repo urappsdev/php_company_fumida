@@ -6,7 +6,7 @@
 				<div class="card-body">
 					<h5 class="card-title"><?php echo $article->title; ?></h5>
 					<p class="card-text"><?php echo substr($article->content, 0, 100); ?></p>
-					<a href="<?= base_url() . 'blog/read/' . $article->slug ?>" class="btn btn-primary">Go somewhere</a>
+					<a href="<?= base_url() . 'blog/read/' . $article->slug ?>" class="btn btn-primary">Pelajari</a>
 				</div>
 			</div>
 		<?php endforeach; ?>

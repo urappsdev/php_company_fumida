@@ -16,11 +16,21 @@ class Auth_m extends CI_Model
 				);
 				return redirect('dashboard');
 			} else {
-				$this->session->set_flashdata('messages', 'Wrong password');
+				$this->session->set_flashdata('messages', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				<strong>Wrong Password!</strong> Please re check your password.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>');
 				return redirect('auth/login');
 			}
 		} else {
-			$this->session->set_flashdata('messages', 'Email not registered');
+			$this->session->set_flashdata('messages', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Email Is not Registered!</strong> Please Register first.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>');
 			return redirect('auth/login');
 		}
 	}
