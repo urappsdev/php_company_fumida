@@ -1,6 +1,12 @@
 <?php
 class Auth extends CI_Controller
 {
+
+	public function index()
+	{
+		return redirect('auth/login');
+	}
+
 	public function login()
 	{
 		$this->load->view('layout/header');
