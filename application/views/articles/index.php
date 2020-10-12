@@ -20,7 +20,7 @@
 								<td><?php echo $article->title; ?></td>
 								<td><?php echo ($article->released == '1') ? $article->release_date : 'not released' ?></td>
 								<td><?php echo $article->author; ?></td>
-								<td><?php echo $article->thumbnail; ?></td>
+								<td><img src="<?= base_url('assets/upload/') . $article->thumbnail ?>" alt="<?php echo $article->thumbnail; ?>" class="img-fluid" width="120"></td>
 								<td>
 									<a href="<?= base_url('articles/update/' . $article->slug) ?>" class="btn btn-warning">Update</a>
 								</td>

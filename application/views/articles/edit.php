@@ -3,7 +3,7 @@
 		<div class="card">
 			<div class="card-body">
 				<?php foreach ($articles as $article) : ?>
-					<form action="<?= base_url('articles/updates') ?>" method="post">
+					<form action="<?= base_url('articles/updates') ?>" method="post" enctype="multipart/form-data">
 						<div class="row">
 							<div class="col-md-8">
 								<div class="form-group">
@@ -28,7 +28,7 @@
 									<img src="<?= base_url('assets/upload/' . $article->thumbnail) ?>" alt="<?= $article->thumbnail ?>" class="img-fluid">
 								</div>
 								<div class="form-group">
-									<label for="thumbnail">Change Thumbnail</label>
+									<label for="thumbnail" class="btn btn-default">Change Thumbnail</label>
 									<input type="file" name="thumbnail" id="">
 								</div>
 							</div>

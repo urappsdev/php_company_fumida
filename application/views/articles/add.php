@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="card">
 			<div class="card-body">
-				<form action="<?= base_url('articles/submit') ?>" method="post">
+				<form action="<?= base_url('articles/submit') ?>" method="post" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-md-8">
 							<div class="form-group">
@@ -23,12 +23,12 @@
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="thumbnail">Add Thumbnail</label>
+								<label for="thumbnail" class="btn btn-default">Add Thumbnail</label>
 								<input type="file" name="thumbnail" id="">
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-info">Update</button>
+					<button type="submit" class="btn btn-info">Save</button>
 				</form>
 			</div>
 		</div>
