@@ -10,6 +10,7 @@ class Auth_m extends CI_Model
 			if (password_verify($data['password'], $user['password'])) {
 				$this->session->set_userdata(
 					[
+						'name' 		=> $user['email'],
 						'user_id' 	=> $user['id'],
 						'is_admin'	=> $user['is_admin']
 					]

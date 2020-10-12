@@ -55,7 +55,7 @@ class Auth extends CI_Controller
 
 	public function logout()
 	{
-		$params = ['user_id', 'is_admin'];
+		$params = ['user_id', 'is_admin', 'email'];
 		$this->session->unset_userdata($params);
 		return redirect('auth/login');
 	}

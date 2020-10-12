@@ -20,6 +20,10 @@
 								<label for="content">Content</label>
 								<textarea name="content" class="form-control"></textarea>
 							</div>
+							<div class="form-group">
+								<label for="author">Author</label>
+								<input type="text" name="author" value="<?= $this->session->userdata('name'); ?>" class="form-control" readonly>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">

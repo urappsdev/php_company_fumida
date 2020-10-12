@@ -42,7 +42,7 @@ class Articles extends CI_Controller
 			$data = [
 				'title' 		=> $this->input->post('title'),
 				'slug' 			=> str_replace(' ', '-', $this->input->post('title')),
-				'author'	 	=> 'drogan120',
+				'author'	 	=> $this->input->post('author'),
 				'content' 		=> $this->input->post('content'),
 				'thumbnail' 	=> $foto,
 				'released'		=> $this->input->post('released'),
