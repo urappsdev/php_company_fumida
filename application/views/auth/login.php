@@ -15,9 +15,8 @@
 						<label for="password">Password</label>
 						<input type="password" name="password" class="form-control" placeholder="Password">
 					</div>
-					<button type="submit" class="btn btn-info">Login</button>
+					<button type="submit" class="btn btn-info  btn-block">Login</button>
 				</form>
-				<p class="mt-3 mb-2">Doesnt' have an account ? <a href="<?= base_url('auth/register') ?>">register</a></p>
 			</div>
 		</div>
 	</div>
